@@ -47,7 +47,7 @@ class LoginViewModel : ViewModel() {
     }
 
     private fun validateUsername() {
-        _usernameError.value = if (_username.value.length >= 4) null else "아이디는 최소 4자 이상이어야 합니다."
+        _usernameError.value = if (_username.value.length >= 4) null else "아이디는 최소 8자 이상이어야 합니다."
     }
 
     private fun validatePassword() {
